@@ -10,9 +10,11 @@ builds:
     goos:
       - windows
     ldflags:
-    - -H windowsgui
+    - -s -w -H windowsgui
   - id: "others"
     goos:
       - darwin
       - linux
       - freebsd
+    ldflags:
+    - -s -w
