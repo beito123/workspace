@@ -6,11 +6,13 @@ archives:
       - goos: windows
         format: zip
 builds:
-  - ldflags:
-    - -H windowsgui
+  - id: "windows"
     goos:
       - windows
-  - goos:
+    ldflags:
+    - -H windowsgui
+  - id: "others"
+    goos:
       - darwin
       - linux
       - freebsd
