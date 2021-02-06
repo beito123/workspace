@@ -1,0 +1,7 @@
+archives:
+  - replacements:
+      386: 32-bit
+      amd64: 64-bit
+    format_overrides:
+      - goos: windows
+        format: zip
